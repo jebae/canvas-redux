@@ -10,7 +10,6 @@ const { dispatch } = store;
 export const appendToContainer = (storyFn) => {
   function EditorContainer() {
     useEffect(() => {
-      initStore();
       storyFn();
     }, []);
   
